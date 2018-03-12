@@ -44,26 +44,26 @@ export default class HitungVolumeBalok extends Component {
 
   render() {
     return (
-      <View style = {{flex:1,backgroundColor:'#bbdefb'}}>
+      <View style = {{flex:1,backgroundColor:'#B9F6CA'}}>
 
         <View style={{backgroundColor:'#2196f3'}}>
-           <Text style = {{padding: 10, fontSize: 20, color: 'white', textAlign:'center'}} >
+           <Text style = {{padding: 10, fontSize: 20, color: 'black', textAlign:'center'}} >
             Menghitung Volume Balok
           </Text>
          </View>
 
-        <View style={{margin:20,padding: 10, backgroundColor:'#e3f2fd'}}>
-            <TextInput style = {{height: 40}}
+        <View style={{margin:20,padding: 10, backgroundColor:'#F8BBD0'}}>
+            <TextInput style = {{height: 30}}
               placeholder="Masukkan Panjang"
               onChangeText={(panjang)=>this.setState({panjang})}
               keyboardType = 'numeric'
             />
-            <TextInput style = {{height: 40}}
+            <TextInput style = {{height: 30}}
               placeholder="Masukkan  Lebar"
               onChangeText={(lebar)=>this.setState({lebar})}
               keyboardType = 'numeric'
             />
-            <TextInput style = {{height: 40}}
+            <TextInput style = {{height: 30}}
               placeholder="Masukkan  Tinggi"
               onChangeText={(tinggi)=>this.setState({tinggi})}
               keyboardType = 'numeric'
@@ -78,7 +78,7 @@ export default class HitungVolumeBalok extends Component {
             />
        </View>
 
-        <View style={{margin:20, backgroundColor:'#90caf9'}}>
+        <View style={{margin:20, backgroundColor:'#EEEEEE'}}>
           <Text style = {{padding: 10, fontSize: 20}} >
               Panjang =  {this.state.panjang} {"\n"}
               Lebar =  {this.state.lebar} {"\n"}
